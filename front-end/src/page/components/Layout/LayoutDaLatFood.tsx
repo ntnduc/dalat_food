@@ -1,11 +1,13 @@
-import {Avatar, Badge, Breadcrumb, Layout, Menu, theme} from 'antd';
+import {Avatar, Badge, Breadcrumb, Layout, Menu, MenuProps, theme} from 'antd';
 import React from 'react';
 const {Header, Content, Footer} = Layout;
 import './style/layout-style.scss';
 
-import { ShoppingOutlined, UserOutlined } from '@ant-design/icons';
+import { LaptopOutlined, NotificationOutlined, ShoppingOutlined, UserOutlined } from '@ant-design/icons';
+import Sider from 'antd/es/layout/Sider';
 
 import LOGO from '../../../logo.svg';
+import ProductList from '../ProductList/ProductList';
 
 const LayoutDaLatFood = () => {
     const {
@@ -15,6 +17,26 @@ const LayoutDaLatFood = () => {
     const onLogin = () => {
         console.log('login');
     };
+
+    const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
+        (icon, index) => {
+            const key = String(index + 1);
+      
+            return {
+                key: `sub${key}`,
+                icon: React.createElement(icon),
+                label: `subnav ${key}`,
+      
+                children: new Array(4).fill(null).map((_, j) => {
+                    const subKey = index * 4 + j + 1;
+                    return {
+                        key: subKey,
+                        label: `option${subKey}`,
+                    };
+                }),
+            };
+        },
+    );
 
     return (
         <Layout className='layout-dalat-food'>
@@ -47,9 +69,23 @@ const LayoutDaLatFood = () => {
                 </div>
 
             </Header>
-            <Content className="site-layout" style={{padding: '0 50px'}}>
+            <Layout className='site-layout' style={{ padding: '24px 0', background: colorBgContainer }}>
+                <Sider style={{ background: colorBgContainer }} width={200}>
+                    <Menu
+                        mode="inline"
+                        defaultSelectedKeys={['1']}
+                        defaultOpenKeys={['sub1']}
+                        style={{ height: '100%' }}
+                        items={items2}
+                    />
+                </Sider>
+                <Content style={{ padding: '0 24px', minHeight: 280 }}>
+                    <ProductList/>
+                </Content>
+            </Layout>
+            {/* <Content className="site-layout" >
                 <div style={{padding: 24, minHeight: 380, background: colorBgContainer}}>Content</div>
-            </Content>
+            </Content> */}
             <Footer style={{textAlign: 'center'}}>Ant Design ©2023 Created by Ant UED</Footer>
         </Layout>
     );
