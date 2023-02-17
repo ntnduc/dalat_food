@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eo59tAjTsaja4LBCyvXnziE5xQ6nwu0ib+2wGXnJjdw=",
+  "Source": "DaLatFood.WebApi",
+  "BasePath": "_content/DaLatFood.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
