@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pkrknLx2hh18aOQLnwTs38epe1nClnnn5aJApkIzt8u0MZCYKVMV2iAfwcBCpHw5FJCTxUcC7lhnUrlcVYE9Cg==",
-  "success": false,
+  "dgSpecHash": "X9kCqZGX2unel88oSmomVsLlZi7LvgP5BUL2EeVLymBesZsQWtO4VB04YkQr+IkGHbMU983gtN4C8e6BtaGaWA==",
+  "success": true,
   "projectFilePath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore/7.0.3/microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.3/microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.3/microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.3/microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
@@ -34,15 +35,5 @@
     "/Users/nguyentrannhatduc/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
     "/Users/nguyentrannhatduc/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.Options.ConfigurationExtensions from 8.0.0-preview.1.23110.8 to 7.0.0. Reference the package directly from the project to select a different version. \n DaLatFood.Infrastructure -> DaLatFood.Domain -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 8.0.0-preview.1.23110.8) \n DaLatFood.Infrastructure -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 7.0.0)",
-      "libraryId": "Microsoft.Extensions.Options.ConfigurationExtensions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

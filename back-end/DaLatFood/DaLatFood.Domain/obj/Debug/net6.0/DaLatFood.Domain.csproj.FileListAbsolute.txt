@@ -15,4 +15,3 @@
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/obj/Debug/net6.0/refint/DaLatFood.Domain.dll
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.pdb
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/obj/Debug/net6.0/ref/DaLatFood.Domain.dll
-/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

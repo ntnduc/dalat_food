@@ -1,0 +1,421 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Migration/DaLatFood.Migration.csproj": {}
+  },
+  "projects": {
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj",
+        "projectName": "DaLatFood.Application",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj",
+        "projectName": "DaLatFood.Constracts",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj",
+        "projectName": "DaLatFood.Domain",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj",
+        "projectName": "DaLatFood.Infrastructure",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Migration/DaLatFood.Migration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Migration/DaLatFood.Migration.csproj",
+        "projectName": "DaLatFood.Migration",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Migration/DaLatFood.Migration.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Migration/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/DaLatFood.WebApi.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/DaLatFood.WebApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/DaLatFood.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/DaLatFood.WebApi.csproj",
+        "projectName": "DaLatFood.WebApi",
+        "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/DaLatFood.WebApi.csproj",
+        "packagesPath": "/Users/nguyentrannhatduc/.nuget/packages/",
+        "outputPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nguyentrannhatduc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Application/DaLatFood.Application.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/DaLatFood.Constracts.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj"
+              },
+              "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj": {
+                "projectPath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Infrastructure/DaLatFood.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/nguyentrannhatduc/.dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

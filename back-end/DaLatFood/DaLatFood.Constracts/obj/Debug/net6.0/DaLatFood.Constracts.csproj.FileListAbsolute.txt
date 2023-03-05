@@ -2,6 +2,7 @@
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.dll
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.pdb
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.dll
+/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.pdb
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.AssemblyReference.cache
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,4 +14,3 @@
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/Debug/net6.0/refint/DaLatFood.Constracts.dll
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.pdb
 /Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/obj/Debug/net6.0/ref/DaLatFood.Constracts.dll
-/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Constracts/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
