@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaLatFood.Domain", "DaLatFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaLatFood.Constracts", "DaLatFood.Constracts\DaLatFood.Constracts.csproj", "{39FE5D0F-AA0D-4FC9-A43F-D82E1B461AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaLatFood.Migration", "DaLatFood.Migration\DaLatFood.Migration.csproj", "{5970C83E-CB7A-4430-A7DE-0A5D0B44352C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{39FE5D0F-AA0D-4FC9-A43F-D82E1B461AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39FE5D0F-AA0D-4FC9-A43F-D82E1B461AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39FE5D0F-AA0D-4FC9-A43F-D82E1B461AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5970C83E-CB7A-4430-A7DE-0A5D0B44352C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5970C83E-CB7A-4430-A7DE-0A5D0B44352C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5970C83E-CB7A-4430-A7DE-0A5D0B44352C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5970C83E-CB7A-4430-A7DE-0A5D0B44352C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

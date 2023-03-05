@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DaLatFood.Application\DaLatFood.Application.csproj" />
+      <ProjectReference Include="..\DaLatFood.Constracts\DaLatFood.Constracts.csproj" />
+      <ProjectReference Include="..\DaLatFood.Domain\DaLatFood.Domain.csproj" />
+      <ProjectReference Include="..\DaLatFood.Infrastructure\DaLatFood.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

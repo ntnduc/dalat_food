@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "VEEnZ3n4HioLLSVqT7WBvgbYHgYXeIF2t8+Hw3OoxruouIZ3LvGwu4j+bcsWfwU4zXlM80aPRPBT1/KV+MUtQA==",
+  "dgSpecHash": "m+bI5Wyj0csFaqJxdRyxYRFsugr218i/h/dd5xJkZmm8k96wky6QwUEKVrnPRkKLozCSwBIrIeCim02xECb/tQ==",
   "success": true,
   "projectFilePath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/DaLatFood/DaLatFood.Domain/DaLatFood.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore/7.0.3/microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.3/microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.3/microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0-preview.1.23110.8/microsoft.extensions.configuration.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0-preview.1.23110.8/microsoft.extensions.configuration.binder.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0-preview.1.23110.8/microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.options/8.0.0-preview.1.23110.8/microsoft.extensions.options.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.options.configurationextensions/8.0.0-preview.1.23110.8/microsoft.extensions.options.configurationextensions.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/microsoft.extensions.primitives/8.0.0-preview.1.23110.8/microsoft.extensions.primitives.8.0.0-preview.1.23110.8.nupkg.sha512",
+    "/Users/nguyentrannhatduc/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
