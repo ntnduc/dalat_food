@@ -1,0 +1,64 @@
+//layout style
+.layout-dalat-food {
+
+    //header style
+    .custom-header {
+        background-color: var(--main-color-white);
+        border-bottom: 1px solid var(--main-color-grey-light);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logo {
+            display: inherit;
+            flex: 1;
+        }
+
+        .content-right {
+            font-size: 15px;
+            font-weight: 400;
+            display: flex;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            .user-cart {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                cursor: pointer;
+
+                .user-cart-count {
+                    margin-right: 10px;
+
+                    .ant-badge-count {
+                        background-color: var(--main-color-green);
+
+                        .ant-scroll-number-only {
+                            font-size: 10px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .user-login {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .avatar-user {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .site-layout{
+        min-height: calc(100vh - 133px);
+    }
+
+}

@@ -9,41 +9,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548dbf9f-81f5-431a-b1fe-f241c6911ffa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DaLatFood.Domain/Core/RepositoriesCore/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DaLatFood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DaLatFood/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/bin/Debug/net6.0/DaLatFood.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/bin/Debug/net6.0/DaLatFood.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/bin/Debug/net6.0/DaLatFood.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/bin/Debug/net6.0/DaLatFood.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/DaLatFood.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/DaLatFood.Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/DaLatFood.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/DaLatFood.Application.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/Debug/net6.0/DaLatFood.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Constracts/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Application.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/ref/DaLatFood.Constracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/Debug/net6.0/refint/DaLatFood.Constracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Constracts/obj/rider.project.restore.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Application.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Constracts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Constracts.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Constracts.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/bin/Debug/net6.0/DaLatFood.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/DaLatFood.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/DaLatFood.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/DaLatFood.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/DaLatFood.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.GlobalUsings.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Domain/obj/Debug/net6.0/DaLatFood.Domain.dll" afterDir="false" />
@@ -57,11 +64,14 @@
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Constracts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Constracts.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/bin/Debug/net6.0/DaLatFood.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/DaLatFood.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/DaLatFood.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/DaLatFood.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/DaLatFood.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/Debug/net6.0/DaLatFood.Infrastructure.dll" afterDir="false" />
@@ -70,8 +80,11 @@
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/DaLatFood.Migrator.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/DaLatFood.Migrator.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/DaLatFood.Migrator.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/DaLatFood.Migrator.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/Debug/net6.0/DaLatFood.Migrator.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.Migrator/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.Migrator/obj/rider.project.restore.info" afterDir="false" />
@@ -83,17 +96,21 @@
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/bin/Debug/net6.0/DaLatFood.WebApi.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/DaLatFood.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/DaLatFood.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/DaLatFood.WebApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/DaLatFood.WebApi.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/DaLatFood.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/Debug/net6.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DaLatFood.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DaLatFood.WebApi/obj/rider.project.restore.info" afterDir="false" />
@@ -254,6 +271,7 @@
       <workItem from="1677774310738" duration="6512000" />
       <workItem from="1677901822291" duration="5286000" />
       <workItem from="1678034184843" duration="3415000" />
+      <workItem from="1678110127032" duration="3207000" />
     </task>
     <servers />
   </component>

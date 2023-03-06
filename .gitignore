@@ -9,3 +9,4 @@ back-end/DaLatFood/DaLatFood.Application/obj/
 *.dll
 back-end/DaLatFood/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.props
 *.pdb
+.DS_Store
