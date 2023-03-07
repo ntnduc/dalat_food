@@ -1,10 +1,10 @@
+using DaLatFood.Domain.Core;
 using DaLatFood.Domain.Product.Repositories;
 
 namespace DaLatFood.Domain.Product.Entity;
 
-public class Production
+public class Production : Entity<Guid>
 {
-    public Guid Id { get; set; }
     public string Name { get; set; }
     public string Price { get; set; }
 }

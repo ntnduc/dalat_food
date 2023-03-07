@@ -1,6 +1,8 @@
 using DaLatFood.Application.Common.Interface.DateTimeProvider;
+using DaLatFood.Domain.Product.Repositories;
 using DaLatFood.Infrastructure.Data;
 using DaLatFood.Infrastructure.DateTimeProvider.Service;
+using DaLatFood.Infrastructure.Repositories.Product;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +14,7 @@ public static class InfrastructureModule
         ConfigurationManager configurationManager)
     {
         service.AddDbContext<ApplicationDbContext>();
+        service.AddScoped<IProductRepository, ProductRepository>();
         service.AddSingleton<IDateTimeProvider, DateTimeProviderService>();
         return service;
     }
