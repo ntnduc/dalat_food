@@ -1,12 +1,1 @@
-
-*.json
-back-end/DaLatFood/.idea/.idea.DaLatFood/.idea/workspace.xml
-back-end/DaLatFood/DaLatFood.Application/bin/Debug/net6.0/DaLatFood.Application.dll
-*.pdb
-back-end/DaLatFood/.idea/.idea.DaLatFood/.idea/workspace.xml
-back-end/DaLatFood/DaLatFood.Application/bin/
-back-end/DaLatFood/DaLatFood.Application/obj/
-*.dll
-back-end/DaLatFood/DaLatFood.Constracts/obj/DaLatFood.Constracts.csproj.nuget.g.props
-*.pdb
-.DS_Store
+/back-end
