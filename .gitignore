@@ -1,8 +1,7 @@
-/back-end
-/back-end/*
-*/back-end
 /obj/*
 /obj
 /bin
 /.vscode
 /.idea
+/back-end/
+.gitignore

@@ -10,7 +10,6 @@ public static class DomainModule
 {
     public static IServiceCollection AddDomain(this IServiceCollection service)
     {
-        service.AddScoped<IProductRepository>();
         return service;
     }
 }
