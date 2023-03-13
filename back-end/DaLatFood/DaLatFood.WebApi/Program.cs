@@ -1,10 +1,12 @@
 using DaLatFood.Application;
 using DaLatFood.Domain;
 using DaLatFood.Infrastructure;
+using DaLatFood.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var connectionString = builder.Configuration.GetConnectionString("Default");
 // Add services to the container.
 builder.Services
     .AddApplication()
@@ -17,6 +19,11 @@ builder.Services.AddSwaggerGen(a =>
 {
     a.SwaggerDoc("v1", new OpenApiInfo { Title = "Da Lat Food", Version = "v1" });
     a.CustomSchemaIds(i => i.FullName);
+});
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
 });
 
 var app = builder.Build();
