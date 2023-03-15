@@ -1,7 +1,6 @@
-using System.Linq.Expressions;
 using DaLatFood.Domain.Core;
 using DaLatFood.Domain.Core.IRepositoriesCore;
-using DaLatFood.Infrastructure.Core.DbContextProvider;
+using DaLatFood.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace DaLatFood.Infrastructure.Core.RepositoryService;
@@ -10,21 +9,16 @@ public class EfCoreRepository<TDbContext, TEntity, TKey> : IEfCoreRepository<TDb
     TDbContext : DbContext
     where TEntity : class, IEntity<TKey>
 {
-    private readonly IDbContextProvider<TDbContext> _dbContextProvider;
-
-    public EfCoreRepository(IDbContextProvider<TDbContext> dbContextProvider)
+    private readonly ApplicationDbContext _applicationDbContext;
+    public EfCoreRepository( ApplicationDbContext applicationDbContext)
     {
-        _dbContextProvider = dbContextProvider;
+        _applicationDbContext = applicationDbContext;
     }
 
-    private  Task<TDbContext> GetDbContextAsync()
-    {
-        return _dbContextProvider.GetDbContextAsync();
-    }
 
-    private async Task<DbSet<TEntity>> GetDbSetAsync()
+    private Task<DbSet<TEntity>> GetDbSetAsync()
     {
-        return (await GetDbContextAsync()).Set<TEntity>();
+        return Task.FromResult(_applicationDbContext.Set<TEntity>());
     }
 
     public virtual async Task<TEntity> FindAsync(TKey id, bool isTracking = true,

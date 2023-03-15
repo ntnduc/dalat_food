@@ -14,7 +14,6 @@ public static class InfrastructureModule
     public static IServiceCollection AddInfrastructure(this IServiceCollection service,
         ConfigurationManager configurationManager)
     {
-        service.AddDomain();
         service.AddDbContext<ApplicationDbContext>();
         service.AddScoped<IProductRepository, ProductRepository>();
         service.AddSingleton<IDateTimeProvider, DateTimeProviderService>();
