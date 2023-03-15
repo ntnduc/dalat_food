@@ -2,5 +2,6 @@ namespace DaLatFood.Application.Production.Service;
 
 public interface IProductService
 {
-    Task<object> GetProduction(Guid id);
+    Task<object> GetProductionAsync(Guid id);
+    Task<List<Domain.Product.Entity.Production>> GetListProductionAsync();
 }

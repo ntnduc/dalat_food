@@ -7,12 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DaLatFood.Application\DaLatFood.Application.csproj" />
-      <ProjectReference Include="..\DaLatFood.Constracts\DaLatFood.Constracts.csproj" />
-      <ProjectReference Include="..\DaLatFood.Domain\DaLatFood.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
         <HintPath>..\..\..\..\..\..\.dotnet\shared\Microsoft.AspNetCore.App\6.0.7\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
       </Reference>
@@ -23,6 +17,10 @@
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.27.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DaLatFood.Domain\DaLatFood.Domain.csproj" />
     </ItemGroup>
 
 </Project>

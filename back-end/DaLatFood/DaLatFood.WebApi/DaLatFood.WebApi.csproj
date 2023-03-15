@@ -13,8 +13,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DaLatFood.Application\DaLatFood.Application.csproj" />
-      <ProjectReference Include="..\DaLatFood.Constracts\DaLatFood.Constracts.csproj" />
-      <ProjectReference Include="..\DaLatFood.Domain\DaLatFood.Domain.csproj" />
       <ProjectReference Include="..\DaLatFood.Infrastructure\DaLatFood.Infrastructure.csproj" />
     </ItemGroup>
 

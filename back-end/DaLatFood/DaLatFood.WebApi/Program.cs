@@ -1,5 +1,4 @@
 using DaLatFood.Application;
-using DaLatFood.Domain;
 using DaLatFood.Infrastructure;
 using DaLatFood.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -10,8 +9,8 @@ var connectionString = builder.Configuration.GetConnectionString("Default");
 // Add services to the container.
 builder.Services
     .AddApplication()
-    .AddInfrastructure(builder.Configuration)
-    .AddDomain();
+    .AddInfrastructure(builder.Configuration);
+// .AddDomain();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -24,7 +23,7 @@ builder.Services.AddSwaggerGen(a =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
-});
+}); 
 
 var app = builder.Build();
 
