@@ -1,6 +1,6 @@
 namespace DaLatFood.Infrastructure.Core.RepositoryService;
 
-public interface IEfCoreRepository<TDbContext, TEntity, TKey>
+public interface IEfCoreRepository<TEntity, TKey>
 {
     Task<TEntity> FindAsync(TKey id, bool isTracking = true,
         CancellationToken cancellationToken = default(CancellationToken));

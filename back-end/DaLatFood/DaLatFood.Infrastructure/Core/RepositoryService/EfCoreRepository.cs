@@ -5,8 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DaLatFood.Infrastructure.Core.RepositoryService;
 
-public class EfCoreRepository<TDbContext, TEntity, TKey> : IEfCoreRepository<TDbContext, TEntity, TKey>, IRepository<TEntity, TKey> where
-    TDbContext : DbContext
+public class EfCoreRepository<TEntity, TKey> : IEfCoreRepository<TEntity, TKey>, IRepository<TEntity, TKey>
     where TEntity : class, IEntity<TKey>
 {
     private readonly ApplicationDbContext _applicationDbContext;
@@ -31,7 +30,7 @@ public class EfCoreRepository<TDbContext, TEntity, TKey> : IEfCoreRepository<TDb
     public virtual async Task<TEntity> GetAsync(TKey id, bool isTracking = true,
         CancellationToken cancellationToken = default(CancellationToken))
     {
-        EfCoreRepository<TDbContext, TEntity, TKey> efCoreRepository = this;
+        EfCoreRepository<TEntity, TKey> efCoreRepository = this;
         IQueryable<TEntity> queryable;
         queryable = await efCoreRepository.GetQueryableAsync();
         IQueryable<TEntity> source = queryable;

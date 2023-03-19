@@ -5,7 +5,7 @@ using DaLatFood.Infrastructure.Data;
 
 namespace DaLatFood.Infrastructure.Repositories.Product;
 
-public class ProductRepository: EfCoreRepository<ApplicationDbContext, Production, Guid>, IProductRepository
+public class ProductRepository: EfCoreRepository<Production, Guid>, IProductRepository
 {
     public ProductRepository(ApplicationDbContext dbContextProvider) : base(dbContextProvider)
     {

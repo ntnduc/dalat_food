@@ -13,5 +13,9 @@
         <HintPath>..\..\..\..\..\..\.dotnet\shared\Microsoft.AspNetCore.App\6.0.7\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
       </Reference>
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    </ItemGroup>
 
 </Project>

@@ -1,7 +1,9 @@
+using DaLatFood.Application.Base;
+using DaLatFood.Application.Production.Dto;
+
 namespace DaLatFood.Application.Production.Service;
 
-public interface IProductService
+public interface IProductService : ICrudService<Domain.Product.Entity.Production, ProductListDto, ProductListDto,
+    ProductListDto, ProductListDto>
 {
-    Task<object> GetProductionAsync(Guid id);
-    Task<List<Domain.Product.Entity.Production>> GetListProductionAsync();
 }

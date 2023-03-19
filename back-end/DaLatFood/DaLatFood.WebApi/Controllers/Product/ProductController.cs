@@ -1,4 +1,7 @@
+using DaLatFood.Application.Common;
+using DaLatFood.Application.Production.Dto;
 using DaLatFood.Application.Production.Service;
+using DaLatFood.Domain.Core.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,8 +20,9 @@ public class ProductController : ControllerBase
 
     [HttpGet("list")]
     [AllowAnonymous]
-    public Task<List<Domain.Product.Entity.Production>> GetListProduct()
+    public async Task<ApiResponse<PaginatedList<ProductListDto>>> GetListProduct(CancellationToken cancellationToken = default (CancellationToken))
     {
-        return _productService.GetListProductionAsync();
+        var listResult = await _productService.GetListAsync(cancellationToken);
+        return ApiResponse<PaginatedList<ProductListDto>>.Ok(listResult);
     }
 }
