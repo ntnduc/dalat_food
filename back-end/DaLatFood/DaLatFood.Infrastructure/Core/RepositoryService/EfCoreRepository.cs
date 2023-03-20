@@ -9,7 +9,8 @@ public class EfCoreRepository<TEntity, TKey> : IEfCoreRepository<TEntity, TKey>,
     where TEntity : class, IEntity<TKey>
 {
     private readonly ApplicationDbContext _applicationDbContext;
-    public EfCoreRepository( ApplicationDbContext applicationDbContext)
+
+    protected EfCoreRepository(ApplicationDbContext applicationDbContext)
     {
         _applicationDbContext = applicationDbContext;
     }
@@ -19,9 +20,9 @@ public class EfCoreRepository<TEntity, TKey> : IEfCoreRepository<TEntity, TKey>,
     {
         return Task.FromResult(_applicationDbContext.Set<TEntity>());
     }
-
+    
     public virtual async Task<TEntity> FindAsync(TKey id, bool isTracking = true,
-        CancellationToken cancellationToken = default(CancellationToken))
+        CancellationToken cancellationToken = default (CancellationToken))
     {
         return await GetAsync(id, isTracking, cancellationToken) ??
                throw new Exception("Not found!");
@@ -46,8 +47,28 @@ public class EfCoreRepository<TEntity, TKey> : IEfCoreRepository<TEntity, TKey>,
         }
         return result;
     }
-    
-    
+
+    public virtual async Task<TEntity> AddAsync(TEntity entity, bool autoSave = false)
+    {
+        TEntity saveEntity = _applicationDbContext.AddAsync(entity).Result.Entity;
+        if (autoSave)
+        {
+            await _applicationDbContext.SaveChangesAsync(new CancellationToken());
+        }
+
+        return saveEntity;
+    }
+
+    public virtual  async Task<TEntity> UpdateAsync(TEntity entity, bool autoSave)
+    {
+        TEntity updateEntity = _applicationDbContext.Update(entity).Entity;
+        if (autoSave)
+        {
+            await _applicationDbContext.SaveChangesAsync(new CancellationToken());
+        }
+
+        return updateEntity;
+    }
 
     public async Task<IQueryable<TEntity>> GetQueryableAsync()
     {

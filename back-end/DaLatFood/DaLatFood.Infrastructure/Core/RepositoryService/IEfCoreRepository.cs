@@ -9,4 +9,7 @@ public interface IEfCoreRepository<TEntity, TKey>
         CancellationToken cancellationToken = default(CancellationToken));
 
     Task<IQueryable<TEntity>> GetQueryableAsync();
+
+    Task<TEntity> AddAsync(TEntity entity, bool autoSave = false);
+    Task<TEntity> UpdateAsync(TEntity entity, bool autoSave = false);
 }

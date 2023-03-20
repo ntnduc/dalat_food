@@ -8,11 +8,11 @@ namespace DaLatFood.WebApi.Controllers.Product;
 
 [ApiController]
 [Route("/api/product")]
-public class ProductController : CrudControllerBase<Production, ProductListDto,ProductListDto,ProductListDto,ProductListDto>
+public class ProductController : CrudControllerBase<Production, ProductListDto, ProductDetailDto, ProductCreateDto,
+    ProductUpdateDto>
 {
-    private readonly IProductService _productService;
+
     public ProductController(IProductService productService) : base(productService)
     {
-        _productService = productService;
     }
 }

@@ -9,12 +9,20 @@ public static class ApplicationModule
 {
     public static IServiceCollection AddApplication(this IServiceCollection service)
     {
+        //Mapper
         var mapperConfig = new MapperConfiguration(mc =>
         {
             mc.AddProfile<MapProductProfile>();
         });
         IMapper mapper = mapperConfig.CreateMapper();
         service.AddSingleton(mapper);
+        
+        //Validate
+        // service.AddValidatorsFromAssemblyContaining<ValidateProductCreateDto>();
+        // service.AddValidatorsFromAssemblyContaining<ValidateProductUpdateDto>();
+        // service.AddValidatorsFromAssemblyContaining<ValidateProductDetailDto>();
+
+        //Service
         service.AddScoped<IProductService, ProductService>();
         return service;
     }

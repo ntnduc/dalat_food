@@ -1,6 +1,3 @@
-using System.Linq.Expressions;
-using DaLatFood.Domain.Core.CommonModel;
-
 namespace DaLatFood.Domain.Core.IRepositoriesCore;
 
 public interface IRepository<TEntity, TKey> 
@@ -12,4 +9,7 @@ public interface IRepository<TEntity, TKey>
         CancellationToken cancellationToken = default(CancellationToken));
 
     Task<IQueryable<TEntity>> GetQueryableAsync();
+
+    Task<TEntity> AddAsync(TEntity entity, bool autoSave = false);
+    Task<TEntity> UpdateAsync(TEntity entity, bool autoSave = false);
 }
