@@ -12,6 +12,7 @@ public class ValidateProductCreateDto : AbstractValidator<ProductCreateDto>
 {
     public ValidateProductCreateDto()
     {
-        
+        RuleFor(x => x.Name).NotNull().NotEmpty();
+        RuleFor(x => x.Price).NotNull();
     }
 }

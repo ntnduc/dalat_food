@@ -28,21 +28,58 @@ public abstract class CrudControllerBase<TEntity, TListDto, TDetailDto, TCreateD
     public virtual async Task<ApiResponse<TDetailDto>> GetDetailAsync(Guid id,
         CancellationToken cancellationToken = default(CancellationToken))
     {
-        var result = await _crudService.GetDetailAsync(id, cancellationToken);
-        return ApiResponse<TDetailDto>.Ok(result);
+        try
+        {
+            var result = await _crudService.GetDetailAsync(id, cancellationToken);
+            return ApiResponse<TDetailDto>.Ok(result);
+        }
+        catch (Exception e)
+        {
+            return ApiResponse<TDetailDto>.Fail(e.Message);
+        }
     }
 
     [HttpPost("create")]
     public virtual async Task<ApiResponse<TDetailDto>> CreateAsync([FromBody] TCreateDto createDto)
     {
-        var result = await _crudService.CreateAsync(createDto);
-        return ApiResponse<TDetailDto>.Ok(result);
+        try
+        {
+            var result = await _crudService.CreateAsync(createDto);
+            return ApiResponse<TDetailDto>.Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return ApiResponse<TDetailDto>.Fail(e.Message);
+        }
     }
 
     [HttpPost("update")]
     public virtual async Task<ApiResponse<TDetailDto>> UpdateAsync([FromBody] TUpdateDto updateDto)
     {
-        var result = await _crudService.UpdateAsync(updateDto);
-        return ApiResponse<TDetailDto>.Ok(result);
+        try
+        {
+            var result = await _crudService.UpdateAsync(updateDto);
+            return ApiResponse<TDetailDto>.Ok(result);
+        }
+        catch (Exception e)
+        {
+            return ApiResponse<TDetailDto>.Fail(e.Message);
+        }
+    }
+
+    [HttpDelete("delete")]
+    public virtual async Task<ApiResponse<TDetailDto>> DeleteAsync(Guid id,
+        CancellationToken cancellationToken = default(CancellationToken))
+    {
+        try
+        {
+            var result = await _crudService.DeleteAsync(id, cancellationToken);
+            return ApiResponse<TDetailDto>.Ok(result);
+        }
+        catch (Exception e)
+        {
+            return ApiResponse<TDetailDto>.Fail($"Delete fail -> {e.Message}");
+        }
     }
 }

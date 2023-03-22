@@ -14,12 +14,13 @@ public class
 {
     private readonly IRepository<TEntity, Guid> _repository;
     private readonly IMapper _mapper;
+    private readonly IValidateModel _validateModel;
 
-    public CrudService(IRepository<TEntity, Guid> repository, IMapper mapper)
+    public CrudService(IRepository<TEntity, Guid> repository, IMapper mapper, IValidateModel validateModel)
     {
         _repository = repository;
         _mapper = mapper;
-
+        _validateModel = validateModel;
     }
 
 
@@ -41,19 +42,36 @@ public class
         return result ?? throw new Exception("Not Found!");
     }
 
-    public virtual async Task<TDetailDto> UpdateAsync(TUpdateDto updateDto)
+    public virtual async Task<TDetailDto> UpdateAsync(TUpdateDto updateDto, CancellationToken cancellationToken = default (CancellationToken))
     {
+        var validate = await _validateModel.ValidateModelAsync(updateDto);
+        if (!validate.IsValid)
+        {
+            throw new Exception($"Valid fail -> {validate.ToDictionary()}");
+        }
         var entity = _mapper.Map<TUpdateDto, TEntity>(updateDto);
         var entityNew = await _repository.UpdateAsync(entity, true);
         var result = _mapper.Map<TEntity, TDetailDto>(entityNew);
         return result;
     }
 
-    public virtual async Task<TDetailDto> CreateAsync(TCreateDto createDto)
+    public virtual async Task<TDetailDto> CreateAsync(TCreateDto createDto, CancellationToken cancellationToken = default (CancellationToken))
     {
+        var validate = await _validateModel.ValidateModelAsync(createDto);
+        if (!validate.IsValid)
+        {
+            throw new Exception($"Valid fail -> {validate.ToDictionary()}");
+        }
         var entity = _mapper.Map<TCreateDto, TEntity>(createDto);
         var entityNew = await _repository.AddAsync(entity, true);
         var result = _mapper.Map<TEntity, TDetailDto>(entityNew);
+        return result;
+    }
+
+    public virtual  async Task<TDetailDto> DeleteAsync(Guid id, CancellationToken cancellationToken = default(CancellationToken))
+    {
+        var entity = await _repository.DeleteAsync(id, true);
+        var result = _mapper.Map<TEntity, TDetailDto>(entity);
         return result;
     }
 }

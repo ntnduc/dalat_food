@@ -1,9 +1,9 @@
+using System.Reflection;
 using AutoMapper;
-using DaLatFood.Application.Production.Dto;
+using DaLatFood.Application.Common;
 using DaLatFood.Application.Production.Mapper;
 using DaLatFood.Application.Production.Service;
 using FluentValidation;
-using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DaLatFood.Application;
@@ -21,9 +21,9 @@ public static class ApplicationModule
         service.AddSingleton(mapper);
         
         //Validate
-        service.AddValidatorsFromAssemblyContaining<ValidateProductCreateDto>();
-        service.AddValidatorsFromAssemblyContaining<ValidateProductUpdateDto>();
-        service.AddValidatorsFromAssemblyContaining<ValidateProductDetailDto>();
+        service.AddTransient<IValidateModel, ValidateModel>();
+        service.AddValidatorsFromAssembly(typeof(ValidateModel).Assembly);
+        // service.AddFluentValidationAutoValidation();
 
         //Service
         service.AddScoped<IProductService, ProductService>();

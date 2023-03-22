@@ -12,4 +12,5 @@ public interface IEfCoreRepository<TEntity, TKey>
 
     Task<TEntity> AddAsync(TEntity entity, bool autoSave = false);
     Task<TEntity> UpdateAsync(TEntity entity, bool autoSave = false);
+    Task<TEntity> DeleteAsync(TKey id, bool autoSave = false);
 }

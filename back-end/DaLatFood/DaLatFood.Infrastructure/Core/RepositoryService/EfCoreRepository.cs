@@ -70,6 +70,18 @@ public class EfCoreRepository<TEntity, TKey> : IEfCoreRepository<TEntity, TKey>,
         return updateEntity;
     }
 
+    public virtual  async Task<TEntity> DeleteAsync(TKey id , bool autoSave = false)
+    {
+        TEntity entity = await this.FindAsync(id);
+        _applicationDbContext.Remove(entity);
+        if (autoSave)
+        {
+            await _applicationDbContext.SaveChangesAsync();
+        }
+
+        return entity;
+    }
+
     public async Task<IQueryable<TEntity>> GetQueryableAsync()
     {
         IQueryable<TEntity> queryable = (await this.GetDbSetAsync()).AsQueryable();
