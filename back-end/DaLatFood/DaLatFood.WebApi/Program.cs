@@ -1,6 +1,7 @@
 using DaLatFood.Application;
 using DaLatFood.Infrastructure;
 using DaLatFood.Infrastructure.Data;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -20,10 +21,7 @@ builder.Services.AddSwaggerGen(a =>
     a.CustomSchemaIds(i => i.FullName);
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(connectionString);
-}); 
+builder.Services.AddDbContext<ApplicationDbContext>(options => { options.UseSqlServer(connectionString); });
 
 var app = builder.Build();
 
