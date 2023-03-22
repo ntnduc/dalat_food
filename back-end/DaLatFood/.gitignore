@@ -1,3 +1,4 @@
+.DS_Store
 *.swp
 *.*~
 project.lock.json
@@ -27,6 +28,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+.idea/
 
 
 # Visual Studio 2015
