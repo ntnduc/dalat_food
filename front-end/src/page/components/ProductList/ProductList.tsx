@@ -19,13 +19,14 @@ const ProductList = () => {
     }, []);
 
     const loadData = async () => {
-        const result = await get('/beverages');
-        if (result) {
-            setState({
-                data: result,
-                loading: false
-            });
-        }
+        const result = await get('/api/product/list');
+        console.log('🚀 -> loadData -> result:', result);
+        // if (result) {
+        //     setState({
+        //         data: result,
+        //         loading: false
+        //     });
+        // }
     };
 
     if (state.loading) {

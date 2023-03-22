@@ -3,9 +3,9 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = function(app) {
     app.use(
-        '/beverages',
+        '/api',
         createProxyMiddleware({
-            target: 'https://beverages-and-desserts.p.rapidapi.com',
+            target: 'https://localhost:5000',
             changeOrigin: true,
         })
     );
