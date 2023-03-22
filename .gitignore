@@ -5,3 +5,4 @@
 /.idea
 .gitignore
 back-end/.DS_Store
+front-end/package-lock.json
