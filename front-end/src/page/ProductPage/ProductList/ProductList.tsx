@@ -3,7 +3,7 @@ import './style/product-list.scss';
 import useRequest, { ApiResponse } from 'common/customHook/useRequest';
 import Loading from 'component/Loading';
 import _ from 'lodash';
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { useMergeState } from 'use-merge-state';
 import AppUtil from 'util/AppUtil';
 
