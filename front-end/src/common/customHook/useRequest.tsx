@@ -11,12 +11,12 @@ export interface ApiResponse<T = unknown> {
     [key: string]: unknown
 }
 
-// interface IUseRequest {
-//     get: <T = unknown>(url:string, config?: AxiosRequestConfig) => Promise<ApiResponse<T>>,
-//     post: <T = unknown>(url: string, data: unknown, config?: AxiosRequestConfig) => Promise<ApiResponse<T >>
-// }
+interface IUseRequest {
+    get: <T = unknown>(url:string, config?: AxiosRequestConfig) => Promise<ApiResponse<T>>,
+    post: <T = unknown>(url: string, data: unknown, config?: AxiosRequestConfig) => Promise<ApiResponse<T >>
+}
 
-const useRequest = () => {
+const useRequest = (): IUseRequest => {
     const requestConfig = useRef<AxiosRequestConfig>({
         headers: {
             'content-type': 'application/json; charset=utf-8',

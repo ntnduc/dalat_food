@@ -4,12 +4,13 @@ import { Card, Modal } from 'antd';
 import _ from 'lodash';
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
+import AppUtil from 'util/AppUtil';
 
 import { FormChooseProduct } from '../FormChooseProduct/FormChooseProduct';
 
 interface Props{
     nameProduct: string,
-    price?: number,
+    price?: string,
     ranglePrice?: Array<string>,
     oldPrice?: string,
     shortInfo?: string
@@ -55,10 +56,10 @@ export const ProductBox = (props:Props) => {
                     </div> }
 
                     {props.price && <div className='price single-price'>
-                        <span> <CountUp end={props.price}
+                        <span> <CountUp end={AppUtil.ToNumberPrice(props.price)}
                             duration={0.6}
                             separator='.'
-                            start={props.price / 5} /> </span>
+                            start={AppUtil.ToNumberPrice(props.price) / 5} /> </span>
                         <span className='unit'>đ</span>
                     </div>} 
 

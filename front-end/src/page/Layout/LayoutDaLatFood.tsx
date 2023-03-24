@@ -1,4 +1,4 @@
-import {Avatar, Badge, Breadcrumb, Layout, Menu, MenuProps, theme} from 'antd';
+import {Avatar, Badge, Layout, Menu, MenuProps, theme} from 'antd';
 import React from 'react';
 const {Header, Content, Footer} = Layout;
 import './style/layout-style.scss';
@@ -6,8 +6,8 @@ import './style/layout-style.scss';
 import { LaptopOutlined, NotificationOutlined, ShoppingOutlined, UserOutlined } from '@ant-design/icons';
 import Sider from 'antd/es/layout/Sider';
 
-import LOGO from '../../../logo.svg';
-import ProductList from '../ProductList/ProductList';
+import LOGO from '../../logo.svg';
+import ProductList from '../ProductPage/ProductList/ProductList';
 
 const LayoutDaLatFood = () => {
     const {
