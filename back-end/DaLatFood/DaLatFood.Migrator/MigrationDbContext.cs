@@ -11,6 +11,7 @@ public class MigrationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ConfigProductEntities();
+        modelBuilder.ConfigFileEntryCollectionEntities();
     }
     
 }
