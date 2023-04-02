@@ -4,6 +4,7 @@ using DaLatFood.Migrator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DaLatFood.Migrator.Migrations
 {
     [DbContext(typeof(MigrationDbContext))]
-    partial class MigrationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230401145502_FK_File")]
+    partial class FK_File
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,9 +103,6 @@ namespace DaLatFood.Migrator.Migrations
                     b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("FileEntryCollectionId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -110,8 +110,6 @@ namespace DaLatFood.Migrator.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FileEntryCollectionId");
 
                     b.ToTable("Product", "ProductSchema");
                 });
@@ -121,15 +119,6 @@ namespace DaLatFood.Migrator.Migrations
                     b.HasOne("DaLatFood.Domain.File.Entity.FileEntryCollection", null)
                         .WithMany("FileEntryEntries")
                         .HasForeignKey("FileEntryCollectionId");
-                });
-
-            modelBuilder.Entity("DaLatFood.Domain.Product.Entity.Production", b =>
-                {
-                    b.HasOne("DaLatFood.Domain.File.Entity.FileEntryCollection", "FileEntryCollection")
-                        .WithMany()
-                        .HasForeignKey("FileEntryCollectionId");
-
-                    b.Navigation("FileEntryCollection");
                 });
 
             modelBuilder.Entity("DaLatFood.Domain.File.Entity.FileEntryCollection", b =>

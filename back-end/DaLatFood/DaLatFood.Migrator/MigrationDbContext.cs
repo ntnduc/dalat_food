@@ -12,6 +12,13 @@ public class MigrationDbContext : DbContext
     {
         modelBuilder.ConfigProductEntities();
         modelBuilder.ConfigFileEntryCollectionEntities();
+        modelBuilder.ConfigFileEntryEntities();
     }
-    
+
+    public override int SaveChanges()
+    {
+        ProductEntityConfiguration.ConfigProductSaveChange(this);
+        return base.SaveChanges();
+    }
+
 }

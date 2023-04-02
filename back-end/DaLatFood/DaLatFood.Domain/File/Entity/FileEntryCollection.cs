@@ -8,4 +8,5 @@ public class FileEntryCollection : Entity<Guid>
     public DateTime CreatedTime { get; set; }
     public Guid? LastModifiedBy { get; set; }
     public DateTime? LastModifiedTime { get; set; }
+    public ICollection<FileEntry> FileEntryEntries { get; set; }
 }
