@@ -1,15 +1,19 @@
+import { RouteType } from 'domain/routeType/RouteType';
 import { lazy } from 'react';
-
-import { RouterInterface } from './common/interface/RouterInterface';
 
 //component
 const ProductList = lazy(() => import('./page/ProductPage/ProductList/ProductList'));
 const AdminPage = lazy(() => import('./page/AdminPage/AdminPage'));
 
-const routers: RouterInterface[] = [{
+export const routers: RouteType[] = [{
     component: ProductList,
-    path: '/'
+    path: '/product',
+    name: 'Product',
+    icon: 'laptop',
+    isDefault: true
 }, {
     component: AdminPage,
-    path: '/admin'
+    path: '/admin',
+    name: 'Admin',
+    icon: 'user'
 }];

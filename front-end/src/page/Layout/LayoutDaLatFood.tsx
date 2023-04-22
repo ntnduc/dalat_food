@@ -1,18 +1,19 @@
 import './style/layout-style.scss';
 
 import { Avatar, Badge, Layout, Menu, MenuProps, theme } from 'antd';
-import React from 'react';
 const { Header, Content } = Layout;
 
-import { LaptopOutlined, ShoppingOutlined, UserOutlined } from '@ant-design/icons';
+import Icon, { ShoppingOutlined, UserOutlined } from '@ant-design/icons';
 import Sider from 'antd/es/layout/Sider';
-import AdminPage from 'page/AdminPage/AdminPage';
-import { BrowserRouter, Link, NavLink, Route, Switch } from 'react-router-dom';
+import _ from 'lodash';
+import { Link, Route, Switch, useLocation } from 'react-router-dom';
+import { routers } from 'Routes';
 
 import LOGO from '../../logo.svg';
-import ProductList from '../ProductPage/ProductList/ProductList';
 
 const LayoutDaLatFood = () => {
+    const location = useLocation();
+
     const {
         token: { colorBgContainer },
     } = theme.useToken();
@@ -22,28 +23,33 @@ const LayoutDaLatFood = () => {
     };
 
     const handleMenu = (): MenuProps['items'] => {
-
-        return [];
+        const menus = _.map(routers, item => {
+            return {
+                key: item.path,
+                label: (
+                    <Link to={item.path}>
+                        {item.name}
+                    </Link>
+                ),
+                icon: <Icon type={'message'} />
+            };
+        }) as MenuProps['items'];
+        return menus;
     };
 
-    const itemMenu: MenuProps['items'] = [{
-        key: '/product',
-        icon: React.createElement(UserOutlined),
-        label: (
-            <Link to='/product' key={1}>
-                Product
-            </Link>
-        )
-    }, {
-        key: '/admin',
-        icon: React.createElement(LaptopOutlined),
-        label: (
-            <Link to='/admin' key={2}>
-                Admin
-            </Link>
-        )
-    }
-    ];
+    // const handleComponent = () => {
+    //     const componentRoute: JSX.Element[] = [];
+    //     _.forEach(routers, item => {
+    //         if (item.isDefault) {
+    //             componentRoute.push(<Route exact
+    //                 path={'/'}
+    //                 component={item.component} />);
+    //         }
+    //         componentRoute.push(<Route path={item.path} component={item.component} />);
+    //     });
+    //     console.log('🚀 ~ file: LayoutDaLatFood.tsx:49 ~ handleComponent ~ componentRoute:', componentRoute);
+    //     return componentRoute;
+    // };
 
     return (
         <Layout className='layout-dalat-food'>
@@ -81,15 +87,22 @@ const LayoutDaLatFood = () => {
                 <Sider style={{ background: colorBgContainer }} width={200}>
                     <Menu
                         mode="inline"
-                        defaultSelectedKeys={['/product']}
                         style={{ height: '100%' }}
-                        items={itemMenu}
+                        defaultSelectedKeys={[location.pathname === '/' ? '/product' : location.pathname]}
+                        items={handleMenu()}
                     />
                 </Sider>
                 <Content style={{ padding: '0 24px', minHeight: 280 }}>
                     <Switch>
+                        {_.map(routers, item => item.isDefault && <Route exact
+                            path={'/'}
+                            component={item.component} />)}
+                        {_.map(routers, item => <Route path={item.path} component={item.component} />)}
+                        {/* <Route exact
+                            path={'/'}
+                            component={ProductList} />
                         <Route path={'/product'} component={ProductList} />
-                        <Route path={'/admin'} component={AdminPage} />
+                        <Route path={'/admin'} component={AdminPage} /> */}
                     </Switch>
                 </Content>
             </Layout>
