@@ -1,6 +1,4 @@
-import React from 'react';
-
-import LayoutDaLatFood from '../Layout/LayoutDaLatFood';
+import LayoutDaLatFood from 'page/Layout/LayoutDaLatFood';
 
 const MainPage = () => {
     return (
