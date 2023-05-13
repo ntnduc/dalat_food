@@ -15,16 +15,17 @@ interface Props extends FloatButtonGroupProps {
     buttonType?: TypeButtonType
 }
 
-const normalClass = 'normal bg-[var(--main-color-green)] border-none text-white font-medium h-10';
+const normalClass = 'normal bg-[var(--main-color-green)] border-none text-white font-medium h-10 hover:opacity-[var(--main-bg-opacity)]';
+
 
 const style: Record<TypeButtonType, React.ComponentProps<'div'>['className']> = {
-    normal: `${normalClass}`
+    normal: `${normalClass}`,
 };
 
 const DaLatButton = (props: Props) => {
     const styleClass = props.buttonType ? style[props.buttonType] : style['normal'];
     return (
-        <Button className={`dalat-button bg-[var(--main-color-green)] border-none text-white font-medium h-10 md:text-sm sm:text-xs ${styleClass} ${props.className} hover:opacity-[var(--main-bg-opacity)]`} href={props.href}>{props.children}</Button>
+        <Button className={`dalat-button md:text-sm sm:text-xs ${styleClass} ${props.className}`} href={props.href}>{props.children}</Button>
     );
 };
 

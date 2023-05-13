@@ -49,7 +49,28 @@ const ProductList = () => {
 
     return (
         <div className='wrap-body-product-content'>
-            <DaLatSwiper>
+            <DaLatSwiper
+                breakpoints={{
+                    768: {
+                        slidesPerView: 2
+                    }
+                }}>
+                <AdvComponent tabContent={'Sản phẩm tươi sống'}
+                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
+                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
+                    backgroundImage={IMAGE_ADV} />
+                <AdvComponent tabContent={'Sản phẩm tươi sống'}
+                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
+                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
+                    backgroundImage={IMAGE_ADV} />
+                <AdvComponent tabContent={'Sản phẩm tươi sống'}
+                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
+                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
+                    backgroundImage={IMAGE_ADV} />
+                <AdvComponent tabContent={'Sản phẩm tươi sống'}
+                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
+                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
+                    backgroundImage={IMAGE_ADV} />
                 <AdvComponent tabContent={'Sản phẩm tươi sống'}
                     title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
                     description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
@@ -59,7 +80,7 @@ const ProductList = () => {
                     description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
                     backgroundImage={IMAGE_ADV} />
             </DaLatSwiper>
-            <div className='wrap-adv-content grid grid-cols-2 gap-5 pb-5'>
+            {/* <div className='wrap-adv-content grid grid-cols-2 gap-5 pb-5'>
                 <AdvComponent tabContent={'Sản phẩm tươi sống'}
                     title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
                     description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
@@ -68,7 +89,7 @@ const ProductList = () => {
                     title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
                     description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
                     backgroundImage={IMAGE_ADV} />
-            </div>
+            </div> */}
             <div className='product-list grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6'>
                 {_.map(state.data, (product) => {
                     return <div className='wrap-content-product'>
@@ -79,7 +100,7 @@ const ProductList = () => {
 
                 })}
             </div>
-        </div>
+        </div >
     );
 };
 export default ProductList;

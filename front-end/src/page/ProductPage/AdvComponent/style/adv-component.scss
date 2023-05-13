@@ -6,6 +6,7 @@
     background-size: cover;
     background-blend-mode: screen;
     overflow: hidden;
+    border-radius: var(--main-border-radius-container);
 
     &::before {
         content: "";

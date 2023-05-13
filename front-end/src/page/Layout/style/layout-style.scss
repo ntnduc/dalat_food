@@ -4,7 +4,7 @@
     //header style
     .custom-header {
         background-color: var(--main-color-white);
-        border-bottom: 1px solid var(--main-color-grey-light);
+        border-bottom: 1px solid var(--main-color-gray-light);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -57,7 +57,7 @@
         }
     }
 
-    .site-layout{
+    .site-layout {
         min-height: calc(100vh - 133px);
     }
 

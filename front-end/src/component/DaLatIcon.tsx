@@ -1,9 +1,16 @@
-import loadable from '@loadable/component';
+import Icon from '@ant-design/icons/lib/components/Icon';
+import { CSSProperties } from 'react';
+
+import { IconType, TIconType } from './IconType';
 
 interface Props {
-    type?: string
+    iconType: TIconType,
+    style?: CSSProperties
 }
 
-const DaLatIcon = loadable((props: Props) => import(`@ant-design/icons${props.type}`));
+const DaLatIcon = (props: Props) => {
+    return <Icon component={IconType[props.iconType] as React.ComponentType<React.SVGProps<SVGSVGElement>>}
+        style={props.style} />;
+};
 
 export default DaLatIcon;
