@@ -1,37 +1,73 @@
 .wrap-dalat-swiper {
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        color: var(--main-color-gray-dark);
-        top: 35%;
-        width: 36px;
-        height: 36px;
-        background: #fff;
-        border-radius: 50%;
-        font-weight: 700;
-        outline: 0;
-        transition: background-color 0.2s ease, color 0.2s ease;
-        -webkit-user-select: none;
-        user-select: none;
-        box-shadow: var(--main-box-shadow);
+    .wrap-controller-swiper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        margin-left: -25px;
 
-        &::after {
-            display: none;
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: auto;
+            color: var(--main-color-gray-dark);
+            width: 36px;
+            height: 36px;
+            background: #fff;
+            border-radius: 50%;
+            font-weight: 700;
+            outline: 0;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            -webkit-user-select: none;
+            user-select: none;
+            box-shadow: var(--main-box-shadow);
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 5px;
+        }
+
+        .swiper-button-next {
+            right: 5px;
+        }
+
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled {
+            opacity: 0;
+            cursor: auto;
+            pointer-events: none;
         }
     }
+}
 
-    .swiper-button-prev {
-        left: 5px;
-    }
+@media (max-width: 640px) {
+    .wrap-controller-swiper {
 
-    .swiper-button-next {
-        right: 5px;
-    }
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 28px !important;
+            height: 28px !important;
+        }
 
-    .swiper-button-prev.swiper-button-disabled,
-    .swiper-button-next.swiper-button-disabled {
-        opacity: 0;
-        cursor: auto;
-        pointer-events: none;
+        .swiper-button-prev {
+            left: 8px;
+        }
+
+        .swiper-button-next {
+            right: 8px;
+        }
     }
 }
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 1280px) {}
+
+@media (max-width: 1536px) {}
