@@ -34,3 +34,14 @@
         transform: translateX(250%);
     }
 }
+
+@media (max-width: 640px) {
+    .container-adv {
+        padding: 20px 20px;
+
+        .tab-content {
+            line-height: 19px;
+
+        }
+    }
+}

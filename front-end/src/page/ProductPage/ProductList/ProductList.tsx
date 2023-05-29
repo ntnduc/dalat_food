@@ -10,6 +10,7 @@ import { useMergeState } from 'use-merge-state';
 import AppUtil from 'util/AppUtil';
 
 import AdvComponent from '../AdvComponent/AdvComponent';
+import OrderAdvComponent from '../AdvComponent/OrderAdvComponent';
 import { ProductBox } from '../ProductBox/ProductBox';
 import { Type_Product_Api } from './interface/ProductInterface';
 
@@ -63,33 +64,10 @@ const ProductList = () => {
                     title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
                     description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
                     backgroundImage={IMAGE_ADV} />
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
             </DaLatSwiper>
-            {/* <div className='wrap-adv-content grid grid-cols-2 gap-5 pb-5'>
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
-                <AdvComponent tabContent={'Sản phẩm tươi sống'}
-                    title={'Miễn phí rau củ sống từ cửa hàng chúng tôi'}
-                    description={'Đã sẵn sàng cho những khách hàng đầu tiên đến với cửa hàng chúng tôi. Rau củ tươi trực tiếp từ Đà Lạt'}
-                    backgroundImage={IMAGE_ADV} />
-            </div> */}
+            <div className='2xl:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'>
+                <OrderAdvComponent />
+            </div>
             <div className='product-list grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6'>
                 {_.map(state.data, (product) => {
                     return <div className='wrap-content-product'>

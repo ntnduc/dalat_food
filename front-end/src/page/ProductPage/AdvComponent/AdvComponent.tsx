@@ -15,7 +15,7 @@ interface Props {
 }
 const AdvComponent = (props: Props) => {
     return (
-        <a className='container-adv flex flex-col py-12 px-10 shadow-md'
+        <a className='container-adv flex flex-col lg:py-12 lg:px-10 shadow-md'
             href={props.urlMoreInfo}
             style={{ backgroundImage: `url(${props.backgroundImage})`, backgroundSize: 'cover' }}>
             <div className='content-body-adv flex flex-col w-2/5'>
