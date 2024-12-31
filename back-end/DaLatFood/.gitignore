@@ -1,0 +1,44 @@
+.DS_Store
+
+# Build Folders (can be generated)
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.generated.cs
+*.generated.swift
+
+# Logs
+*.log
+
+# Visual Studio working files
+.vs/
+.vscode/
+*.code-workspace
+
+# DotNet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
