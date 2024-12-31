@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "aKVfl6ncJQAsUKHwFBOf6+sPEGfypZ6JmmHGCm0fkwKwITnnQPcASHqsmpcxsM9O50GeGtXUDc81Iu7ysa1pOA==",
+  "success": true,
+  "projectFilePath": "/Users/nguyentrannhatduc/Documents/Github/dalat_food/back-end/Identity/Identity/Identity.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://pkg.idtek.com.vn/nuget/default-nuget//'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
